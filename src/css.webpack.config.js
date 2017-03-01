@@ -68,8 +68,8 @@ export default ({
   ...options,
 } = {}) => {
   const IS_STYLE = jsStyles
-    ? /\.(css(\.js)|scss|styl|sass|less)?$/
-    : /\.(css|scss|styl|sass|less)?$/;
+    ? /\.(css(\.js)?|scss|styl|sass|less)$/
+    : /\.(css|scss|styl|sass|less)$/;
   const IS_JS_STYLE = /\.css\.js$/;
 
   const extractor = new ExtractTextPlugin({
