@@ -74,7 +74,7 @@ export default ({
 
   const extractor = new ExtractTextPlugin({
     disable: !extract,
-    filename: '[name].[hash].css',
+    filename: '[name].[contenthash].css',
     ...extract,
   });
 
